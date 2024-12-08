@@ -1,11 +1,11 @@
 {
-  "name": "project-name",
+  "name": "faster_than_light",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --base=/project-name/",
+    "build": "vite build --base=/faster_than_light/",
     "preview": "vite preview"
   },
   "devDependencies": {
