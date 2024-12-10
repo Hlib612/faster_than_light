@@ -1,6 +1,17 @@
-.header{
-    background-color: rgb(13, 0, 255);
-}
-.footer{
-    background-color: rgb(255, 251, 0);
-}
+@import "./base/reset";
+@import "./base/container";
+@import "./base/common";
+@import "./components/header";
+@import "./components/about";
+@import "./components/taste";
+@import "./components/made";
+@import "./components/products";
+@import "./components/top_sellers";
+@import "./components/leave_review";
+@import "./components/explore";
+@import "./components/footer";
+@import "./components/buy_now_modal";
+@import "./components/thank_you_modal";
+@import "./components/review_modal";
+@import "./components/thank_feedback_modal";
+@import "./components/subscribe_modal";
