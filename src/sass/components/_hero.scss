@@ -58,9 +58,9 @@
     display: block;
     min-width: 180px;
     padding: 12px 28px;
-    border: 1px solid var(--white-color);
+    border: 1px solid white;
     border-radius: 100px;
-    color: var(--white-color);
+    color: white;
     text-align: center;
   }
   
@@ -91,7 +91,7 @@
   }
   
   .svg-scroll {
-    fill: var(--accent-color);
+    fill: #fd9222;
   }
   
   .how-its-made-button:hover,
@@ -112,7 +112,7 @@
   
   .scroll:hover .svg-scroll,
   .scroll:focus .svg-scroll {
-    fill: var(--white-color);
+    fill: white;
   }
   
   .top-btn {
@@ -265,7 +265,7 @@
       z-index: 2;
       width: 50px;
       height: 50px;
-      border: 2px solid var(--accent-color);
+      border: 2px solid #fd9222;
       justify-content: center;
       align-items: center;
       outline: none;
@@ -275,18 +275,18 @@
     .top-btn:hover,
     .top-btn:focus {
       transform: scale(1.15);
-      background-color: var(--accent-color);
+      background-color: #fd9222;
     }
     .top-btn:hover .top-btn__icon,
     .top-btn:focus .top-btn__icon {
-      fill: var(--white-color);
+      fill: white;
     }
     .top-btn.show {
       display: flex;
     }
     .top-btn__icon {
       transform: rotate(180deg);
-      fill: var(--accent-color);
+      fill: #fd9222;
     }
   
     @media screen and (-webkit-min-device-pixel-ratio: 2),
