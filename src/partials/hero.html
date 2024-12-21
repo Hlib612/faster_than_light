@@ -1,30 +1,37 @@
 <section class="hero">
-    <div class="main-container">
-        <h2 class="hero__title">Treat yourself or a loved one to <br>
-             our finest ingredients for a moment <br>
-              of pure delight! </h2>
-        <ul class="hero__list">
-            <li class="hero__item">
-                <button class="buy-button js-open-modal primary-button" data-modal="1" type="button">Buy now </button>
-            </li>
-            <li class="hero__item">
-                <a href="#how" class="how-its-made-button">How it’s made </a>
-            </li>
-            <li class="hero__item scroll">
-                <a class="scroll__box" href="#footer">
-                    <span class="scroll__text">scroll down</span>
-                    <span class="scroll__button">
-                        <svg class="svg-scroll" width="12" height="12">
-                            <use href="./img/symbol-defs.svg#icon-fi-rr-angle-small-left"></use>
-                        </svg>
-                    </span>
-                </a>
-            </li>
-        </ul>
-        <button class="top-btn" id="toTop" aria-label="Go to top" title="Go to top">
-            <svg class="top-btn__icon" width="30" height="14">
-                <use href="/team-project-team-3/icons.a3e13180.svg#icon-scroll"></use>
-            </svg>
-        </button>
+    <div class="container">
+        <div class="hero-background">
+            <img class="hero-image" 
+            srcset="./img/hero/mobile/mobile-hero-background@1x.jpg 145w,
+            ./img/hero/mobile/mobile-hero-background@2x.jpg 290w,
+            ./img/hero/tablet/tablet-hero-background@1x.jpg 390w,
+            ./img/hero/tablet/tablet-hero-background@2x.jpg 780w" 
+            sizes="(min-width: 768px) 390px, (min-width: 320px) 145px, 100vw"
+            src="./img/hero/desktop/hero-background@1x.jpg"
+            alt="chocolate-img">
+            <h2 class="chocolate-tittle">
+                Treat yourself or a loved one to 
+                our finest ingredients for a moment 
+                of pure delight!
+            </h2>
+            <ul class="chocolate-button">
+                <li class="buttons">
+                    <button type="button" class="button-hero-chocolate-one">
+                        Buy now
+                    </button>
+                </li>
+                <li class="buttons">
+                    <button type="button" class="button-hero-chocolate-two">
+                        How it's made?
+                    </button>
+                </li>
+            </ul>
+            <a class="scroll-button" href="#">
+                scroll down
+                <svg class="scroll-icon">
+                    <use href="./img/symbol-defs.svg#icon-x"></use>
+                </svg>
+            </a>
+        </div>
     </div>
 </section>
