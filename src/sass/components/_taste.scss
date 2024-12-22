@@ -1,0 +1,59 @@
+.taste {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  @media (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+  &-list {
+    gap: 20px;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+  &-list-item {
+    width: 335px;
+    // height: 270px;
+    border-radius: 15px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  &-list-item.border {
+    border: 1px solid $focusColor;
+    width: 335px;
+    height: 270px;
+  }
+  &-list-item:nth-child(1) {
+    background-color: $focusColor;
+  }
+  &-list-item:nth-child(3) {
+    background-color: $backgroundColor;
+  }
+  &-list-item-image {
+    width: 224px;
+    height: 171px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  &-list-item-text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &-list-item-text.text{
+    color:$textColor ;
+  }
+}
