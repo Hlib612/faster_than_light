@@ -1,0 +1,34 @@
+.explore{
+    background-image:    url(../img/explore/background_mobile_1x.jpg) ;
+ height:  370px;
+    display: flex;
+   
+}
+.container{
+    width: 375px;
+    height: 440px;
+}
+
+.explore-title{
+   margin-top: 50px;
+    color: #ffffff;
+    font-size: 20px;
+
+}
+.explore-text{
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.explore-subscribe-button{
+    margin-top: 37px;
+   margin-left: 115px;
+    color: #ffffff;
+    background-color: #FD9222;
+    width: 128px;
+    height: 41px;
+    bottom: 12px;
+    border-radius: 19px;
+    gap: 14px;
+}
