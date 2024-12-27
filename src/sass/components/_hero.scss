@@ -1,0 +1,37 @@
+.hero{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 72px;
+    color: $hoverColor;
+}
+
+.hero-image{
+    border-radius: 30px;
+    width: 1136px;
+}
+
+.chocolate-tittle{
+    text-align: start;
+    max-width: 280px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -.03em;
+    color: $hoverColor;
+}
+
+.buttons{
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 144px;
+    height: 45px;
+    color: $focusColor;
+}
+
+.button{
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 144px;
+    height: 45px;
+    color: $focusColor;
+}
