@@ -1,1 +1,89 @@
-
+.taste {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  @media (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+  &-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 117%;
+      margin-bottom: 28px;
+    }
+  }
+  &-title-designe {
+    color: $focusColor;
+  }
+  &-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111;
+    margin-bottom: 32px;
+    @media (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+  &-list-item {
+    width: 335px;
+    // height: 270px;
+    border-radius: 15px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  &-list-item.border {
+    border: 1px solid $focusColor;
+    width: 335px;
+  }
+  &-list-item:nth-child(1) {
+    background-color: $focusColor;
+  }
+  &-list-item:nth-child(3) {
+    background-color: $backgroundColor;
+  }
+  &-list-item-image {
+    width: 224px;
+    height: 171px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  &-list-item-text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 28px;
+  }
+  &-list-item-text.text {
+    color: $textColor;
+  }
+}
