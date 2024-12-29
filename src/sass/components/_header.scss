@@ -1,6 +1,21 @@
 .header{
-    padding-top: 20px 14px;
-    padding-bottom: 20px 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 375px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 .header-nav{
@@ -15,11 +30,6 @@
     align-items: center;
 }
 
-.header-nav-list{
-    display: flex;
-    gap: 24px;
-}
-
 .logotype-text{
     font-style: italic;
     font-weight: 700;
@@ -31,6 +41,14 @@
 
 .text-chocolate{
     font-size: 16px;
+}
+
+.header-nav-list{
+    display: flex;
+    gap: 24px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .chocolate-icon{
@@ -53,4 +71,7 @@
     align-self: center;
     margin-left: auto;
     gap: 18px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }

@@ -1,43 +1,16 @@
 .hero{
-    padding-right: 20px;
-    padding-left: 20px;
     padding-bottom: 72px;
     color: $hoverColor;
-}
-
-@media screen and (min-width: 768px) {
-    .hero {
-      padding-right: 32px;
-      padding-left: 32px;
-      padding-bottom: 50px;
-    }
-}
-
-.hero-image{
-    border-radius: 30px;
-    width: 1136px;
-}
-
-.chocolate-tittle{
-    text-align: start;
-    max-width: 280px;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1.2;
-    letter-spacing: -.03em;
-    color: $hoverColor;
-}
-
-.buttons{
     
-}
-
-.button-hero-chocolate-one{
-    color: #fff;
-}
-
-.button-hero-chocolate-two{
-    color: #fff;
+    @media screen and (min-width: 768px) {
+        padding-top: 24px;   
+        padding-bottom: 50px;  
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 72px;
+    }
 }
 
 .hero-container-background{
@@ -47,6 +20,7 @@
     height: 600px;
     background-image: url(../img/hero/mobile/mobile-hero-background@1x.jpg);
     background-repeat: no-repeat;
+    border-radius: 30px;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -55,6 +29,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    border-radius: 30px;
     padding: 40px;
     background-image: url(../img/hero/tablet/tablet-hero-background@1x.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -77,70 +52,85 @@
 
 .chocolate-text-button{
     width: 404px;
+
+    @media screen and (min-width: 768px) {
+        width: 624px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1056px;
+    }
+}
+
+.chocolate-tittle{
+    text-align: start;
+    max-width: 280px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -.03em;
+    color: $hoverColor;
+    
+    @media screen and (min-width: 768px) {
+        padding-top: 390px;
+        min-height: auto;
+        font-weight: 500;
+        line-height: 121%;
+        letter-spacing: -0.03em;
+        color: #fff;
+        width: 484px;
+        max-width: 484px;
+    }
 }
 
 .chocolate-button{
     display: flex;
+    min-width: 120px;
+    gap: 32px 14px;
 }
 
-@media screen and (min-width: 375px) {
-    .chocolate-tittle {
-      padding-top: 390px;
-      min-height: auto;
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 121%;
-      letter-spacing: -0.03em;
-      color: #fff;
-    }
+.buttons{
+    border-radius: 100px;
+    padding: 4px 10px;
+    width: 144px;
+    height: 45px;
+    color: $focusColor;
+}
 
-    .chocolate-button {
-      min-width: 120px;
-    }
+.button-hero-chocolate-one{
+    border-radius: 100px;
+    width: 122px;
+    height: 45px;
+    background-color: $focusColor;
+    color: #fff;
+}
 
-    .buttons-two {
-      min-width: 160px;
-    }
+.buttons-two{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 2px 30px;
+    width: 183px;
+    height: 45px;
 
-    .chocolate-button{
-      gap: 32px 14px;
+    @media screen and (min-width: 768px){
+        padding-top: 10px;
+        min-width: 183px;
     }
-  }
+}
+
+.button-hero-chocolate-two{
+    color: #fff;
+}
 
 .scroll-button{
     margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+          height: 38px;
+}
 }
 
 @media screen and (min-width: 768px) {
-    .chocolate-tittle{
-        max-width: 484px;
-        font-size: 28px;
-        line-height: 1.21;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .hero {
-      padding-right: 32px;
-      padding-left: 32px;
-      padding-bottom: 50px;
-    }
-    .chocolate-tittle {
-      max-width: 484px;
-      padding-top: 670px;
-      font-size: 28px;
-    }
-    .button {
-      min-width: 144px;
-    }
-    .buttons-two{
-      padding-top: 15px;
-      min-width: 183px;
-    }
-    .scroll-button {
-      width: 38px;
-      height: 38px;
-    }
     .scroll-icon {
       width: 16px;
       height: 16px;
