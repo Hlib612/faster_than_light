@@ -1,6 +1,6 @@
 <div class="backdrop">
-    <div class="modal-window">
-        <div class="modal-window-picture">
+    <div class="subscribe-modal">
+        <div class="modal-subscribe-picture">
             <picture>
                 <!-- desktop -->
                 <source media="(min-width: 1200px)" srcset="./img/subcribe-modal/desktop/subscribe-image-desktop@1x.jpg 1x,
@@ -11,20 +11,21 @@
                 <!-- phone -->
                 <source media="(max-width: 767px)" srcset="./img/subcribe-modal/desktop/subscribe-image-mobile@1x.jpg 1x,
                 ./img/subcribe-modal/desktop/subscribe-image-mobile@2x.jpg 2x">
-                <img src="./img/subcribe-modal/desktop/subscribe-image-desktop@1x.jpg" alt="chocolate-form"
-                width="538" height="196">
+                <img src="./img/subcribe-modal/desktop/subscribe-image-desktop@1x.jpg" alt="chocolate-form">
             </picture>
         </div>
-        <button class="modal-window-button-close">
-            X
+        <button class="modal-subscribe-button-close">
+            <svg>
+                <use href="./img/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
         </button>
-        <h2 class="modal-window-tittle">
+        <h2 class="modal-subscribe-tittle">
             Explore our 
             new chocolate first!
         </h2>
-        <form class="modal-window-form">
-            <input class="modal-window-email" placeholder="Enter your email" type="email" name="email-user">
-            <button class="modal-window-close" type="submit">
+        <form class="modal-subcribe-form">
+            <input class="modal-subscribe-email" placeholder="Enter your email" type="email" name="email-user">
+            <button class="modal-subscribe-close" type="submit">
                 Submit
             </button>
         </form>
