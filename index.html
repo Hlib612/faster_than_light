@@ -18,15 +18,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <script type="module" crossorigin src="/faster_than_light/assets/index-10d56f33.js"></script>
-    <link rel="stylesheet" href="/faster_than_light/assets/index-7ca73cd2.css">
+    <script type="module" crossorigin src="/faster_than_light/assets/index-c0918144.js"></script>
+    <link rel="stylesheet" href="/faster_than_light/assets/index-d14f6602.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     <header class="header">
-    <div class="header-container">
-        <nav class="nav">
-            <a class="logotype" href="#">
+    <div class="container flex">
+        <nav class="header-nav">
+            <a class="header-logotype" href="./#">
                 <span class="logotype-text">
                     SIMPLY
                 </span>
@@ -37,28 +37,28 @@
                     <use class="chocolate-icon" href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-chocolate"></use>
                 </svg>
             </a>
-            <ul class="nav-list">
-                <li class="nav-items">
+            <ul class="header-nav-list">
+                <li class="header-nav-items">
                     <a class="nav-links" href="#">
                         Home
                     </a>
                 </li>
-                <li class="nav-items">
+                <li class="header-nav-items">
                     <a class="nav-links" href="#">
                         How it's made?
                     </a>
                 </li>
-                <li class="nav-items">
+                <li class="header-nav-items">
                     <a class="nav-links" href="#">
                         Our products
                     </a>
                 </li>
-                <li class="nav-items">
+                <li class="header-nav-items">
                     <a class="nav-links" href="#">
                         Top sellers
                     </a>
                 </li>
-                <li class="nav-items">
+                <li class="header-nav-items">
                     <a class="nav-links" href="#">
                         Chocolate is loved
                     </a>
@@ -68,15 +68,15 @@
         <ul class="contacts">
             <li class="contacts-links">
                 <a class="social-contacts" href="https://www.instagram.com/">
-                    <svg class="socials-networks">
-                        <use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-instagram-1"></use>
+                    <svg class="socials-networks" width="20" height="20">
+                        <use class="socials-instagram" href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-instagram-1"></use>
                     </svg>
                 </a>
             </li>
             <li class="contacts-links">
                 <a class="social-contacts" href="https://x.com/?lang=uk">
-                    <svg class="social-networks">
-                        <use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-twitter"></use>
+                    <svg class="social-networks" width="20" height="20">
+                        <use class="social-twitter" href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-twitter"></use>
                     </svg>
                 </a>
             </li>
@@ -85,12 +85,8 @@
 </header>
     <section class="hero">
     <div class="container">
-        <div class="hero-background">
-            <img class="hero-image" 
-            srcset="/faster_than_light/assets/mobile-hero-background@1x-47013c4b.jpg 145w, /faster_than_light/assets/mobile-hero-background@2x-c20bf56f.jpg 290w, /faster_than_light/assets/tablet-hero-background@1x-4b5b97d6.jpg 390w, /faster_than_light/assets/tablet-hero-background@2x-527e7e4b.jpg 780w" 
-            sizes="(min-width: 768px) 390px, (min-width: 320px) 145px, 100vw"
-            src="/faster_than_light/assets/hero-background@1x-d2361b38.jpg"
-            alt="chocolate-img">
+            <div class="hero-container-background">
+                <div class="chocolate-text-button">
             <h2 class="chocolate-tittle">
                 Treat yourself or a loved one to 
                 our finest ingredients for a moment 
@@ -102,19 +98,20 @@
                         Buy now
                     </button>
                 </li>
-                <li class="buttons">
+                <li class="buttons-two">
                     <button type="button" class="button-hero-chocolate-two">
                         How it's made?
                     </button>
                 </li>
             </ul>
+            </div>
             <a class="scroll-button" href="#">
                 scroll down
                 <svg class="scroll-icon">
                     <use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-x"></use>
                 </svg>
             </a>
-        </div>
+            </div>
     </div>
 </section>
     <section class="advantages">
@@ -402,10 +399,12 @@
 </footer>
     
     <div class="backdrop">
-    <div class="modal">
-        <div class="modal-window-background-color"></div>
-    <button class="modal-window-close">
-        X
+    <div class="thankyou-modal">
+        <div class="modal-thankyou-background-color"></div>
+    <button class="modal-thankyou-close">
+        <svg>
+            <use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-close-btn"></use>
+        </svg>
     </button>
     <h2 class="thankyou-tittle">
         thank you 
@@ -419,8 +418,8 @@
     
     
     <div class="backdrop">
-    <div class="modal-window">
-        <div class="modal-window-picture">
+    <div class="subscribe-modal">
+        <div class="modal-subscribe-picture">
             <picture>
                 <!-- desktop -->
                 <source media="(min-width: 1200px)" srcset="/faster_than_light/assets/subscribe-image-desktop@1x-c96b8a08.jpg 1x, /faster_than_light/assets/subscribe-image-desktop@2x-659fd822.jpg 2x">
@@ -430,20 +429,21 @@
                 <!-- phone -->
                 <source media="(max-width: 767px)" srcset="./img/subcribe-modal/desktop/subscribe-image-mobile@1x.jpg 1x,
                 ./img/subcribe-modal/desktop/subscribe-image-mobile@2x.jpg 2x">
-                <img src="/faster_than_light/assets/subscribe-image-desktop@1x-c96b8a08.jpg" alt="chocolate-form"
-                width="538" height="196">
+                <img src="/faster_than_light/assets/subscribe-image-desktop@1x-c96b8a08.jpg" alt="chocolate-form">
             </picture>
         </div>
-        <button class="modal-window-button-close">
-            X
+        <button class="modal-subscribe-button-close">
+            <svg>
+                <use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-close-btn"></use>
+            </svg>
         </button>
-        <h2 class="modal-window-tittle">
+        <h2 class="modal-subscribe-tittle">
             Explore our 
             new chocolate first!
         </h2>
-        <form class="modal-window-form">
-            <input class="modal-window-email" placeholder="Enter your email" type="email" name="email-user">
-            <button class="modal-window-close" type="submit">
+        <form class="modal-subcribe-form">
+            <input class="modal-subscribe-email" placeholder="Enter your email" type="email" name="email-user">
+            <button class="modal-subscribe-close" type="submit">
                 Submit
             </button>
         </form>
