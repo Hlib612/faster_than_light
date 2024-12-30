@@ -1,0 +1,51 @@
+.headline{
+    font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: $textColor;
+@media screen and (min-width:768px){
+    font-size: 24px;
+    line-height: 117%;
+}
+}
+.focus_span{
+    font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: $focusColor;
+}
+.top_sellers_list{
+    display: flex;
+    flex-direction: column;
+}
+.top_sellers_item{
+    width: 335px;
+height: 464px;
+@media screen and (min-width:768px){
+    width: 344px;
+}
+@media screen and (min-width:1200px){
+    width: 368px; 
+}
+}
+.top_sellers_img{
+    border-radius: 15px;
+}
+.top_sellers_description{
+    font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
+}
+.top_sellers_button{
+    border-radius: 100px;
+padding: 12px 28px;
+width: 120px;
+height: 41px;
+background-color: $focusColor;
+color: white;
+}
