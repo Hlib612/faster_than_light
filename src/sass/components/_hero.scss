@@ -16,7 +16,9 @@
     display: flex;
     align-items: flex-end;
     width: 335px;
-    height: 600px;
+    height: 620px;
+    padding: 20px;
+    flex-wrap: wrap;
     background-image: url(../img/hero/mobile/mobile-hero-background@1x.jpg);
     background-repeat: no-repeat;
     border-radius: 30px;
@@ -54,7 +56,7 @@
 }
 
 .chocolate-text-button{
-    width: 404px;
+    width: 299px;
 
     @media screen and (min-width: 768px) {
         width: 624px;
@@ -78,10 +80,12 @@
         padding-top: 390px;
         min-height: auto;
         font-weight: 500;
-        line-height: 121%;
+        font-size: 20px;
+        line-height: 120%;
         letter-spacing: -0.03em;
         color: #fff;
         width: 484px;
+        margin-bottom: 32px;
         max-width: 484px;
     }
 }
@@ -135,7 +139,7 @@
 
 @media screen and (min-width: 768px) {
     .scroll-icon {
-      width: 16px;
-      height: 16px;
+      width: 28px;
+      height: 28px;
     }
 }
