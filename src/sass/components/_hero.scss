@@ -3,7 +3,6 @@
     color: $hoverColor;
     
     @media screen and (min-width: 768px) {
-        padding-top: 24px;   
         padding-bottom: 50px;  
     }
     
@@ -16,7 +15,7 @@
 .hero-container-background{
     display: flex;
     align-items: flex-end;
-    width: 1136px;
+    width: 335px;
     height: 600px;
     background-image: url(../img/hero/mobile/mobile-hero-background@1x.jpg);
     background-repeat: no-repeat;
@@ -29,6 +28,8 @@
   }
 
   @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 890px;
     border-radius: 30px;
     padding: 40px;
     background-image: url(../img/hero/tablet/tablet-hero-background@1x.jpg);
@@ -40,6 +41,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 1136px;
+    height: 600px;
     border-radius: 30px;
     background-image: url(../img/hero/desktop/hero-background@1x.jpg);
     @media (min-device-pixel-ratio: 2),
