@@ -5,6 +5,7 @@ line-height: 120%;
 letter-spacing: -0.03em;
 text-transform: uppercase;
 color: $textColor;
+text-align: center;
 @media screen and (min-width:768px){
     font-size: 24px;
     line-height: 117%;
@@ -18,9 +19,27 @@ letter-spacing: -0.03em;
 text-transform: uppercase;
 color: $focusColor;
 }
+.top_second_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+}
 .top_sellers_list{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    column-gap: 20px;
+    row-gap: 16px;
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+      }
 }
 .top_sellers_item{
     width: 335px;
@@ -34,12 +53,18 @@ height: 464px;
 }
 .top_sellers_img{
     border-radius: 15px;
+    height: 464px;
 }
 .top_sellers_description{
     font-weight: 400;
 font-size: 14px;
 line-height: 129%;
 letter-spacing: -0.02em;
+margin-bottom: 20px;
+max-width: 306px;
+@media screen and (min-width:1200px){
+    max-width: 407px;
+}
 }
 .top_sellers_button{
     border-radius: 100px;

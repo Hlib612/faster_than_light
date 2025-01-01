@@ -6,3 +6,8 @@
 .flex{
     display: flex;
 }
+.mob_display{
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
