@@ -3,7 +3,6 @@
     color: $hoverColor;
     
     @media screen and (min-width: 768px) {
-        padding-top: 24px;   
         padding-bottom: 50px;  
     }
     
@@ -16,8 +15,10 @@
 .hero-container-background{
     display: flex;
     align-items: flex-end;
-    width: 1136px;
-    height: 600px;
+    width: 335px;
+    height: 620px;
+    padding: 20px;
+    flex-wrap: wrap;
     background-image: url(../img/hero/mobile/mobile-hero-background@1x.jpg);
     background-repeat: no-repeat;
     border-radius: 30px;
@@ -29,6 +30,8 @@
   }
 
   @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 890px;
     border-radius: 30px;
     padding: 40px;
     background-image: url(../img/hero/tablet/tablet-hero-background@1x.jpg);
@@ -40,6 +43,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 1136px;
+    height: 600px;
     border-radius: 30px;
     background-image: url(../img/hero/desktop/hero-background@1x.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -51,7 +56,7 @@
 }
 
 .chocolate-text-button{
-    width: 404px;
+    width: 299px;
 
     @media screen and (min-width: 768px) {
         width: 624px;
@@ -75,10 +80,12 @@
         padding-top: 390px;
         min-height: auto;
         font-weight: 500;
-        line-height: 121%;
+        font-size: 20px;
+        line-height: 120%;
         letter-spacing: -0.03em;
         color: #fff;
         width: 484px;
+        margin-bottom: 32px;
         max-width: 484px;
     }
 }
@@ -132,7 +139,7 @@
 
 @media screen and (min-width: 768px) {
     .scroll-icon {
-      width: 16px;
-      height: 16px;
+      width: 28px;
+      height: 28px;
     }
 }
