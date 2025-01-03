@@ -7,18 +7,20 @@ top: 20px;
 }
 
 .explore-title{
-   
+   padding: 15px;
     color: #ffffff;
     font-size: 20px;
 
 }
 .explore-text{
+    margin-bottom: 15px;
     margin-top: 15px;
     color: #ffffff;
     font-size: 14px;
 }
 
 .explore-subscribe-button{
+    padding: 10px;
     margin: 0 auto;
     display: block;
     margin-top: 37px;
@@ -29,4 +31,24 @@ top: 20px;
     bottom: 12px;
     border-radius: 19px;
     gap: 14px;
+}
+
+.explore{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+@media screen and (min-width: 375px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 }

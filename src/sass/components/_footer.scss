@@ -6,7 +6,7 @@
 
 
 .footer-menu{
-   
+   margin: 10px;
     color: white;
 }
 
@@ -17,7 +17,9 @@
 }
 
 .footer-title{
-    
+    padding: 10px;
+    margin-top: 10px;
+    margin: 10px;
     color: white;
 }
 
@@ -27,7 +29,8 @@
 }
 
 .footer-social-nets{
-    margin: 10px;
+    display: inline-block;
+    margin: 0 10px;
     width: 58px;
     height: 26px;
     margin-left: auto;
@@ -38,13 +41,14 @@
 }
 
 .footer-social-instagram{
-   
+  
     width: 58px;
     height: 26px;
     
 }
 
 .footer-social-twitter{
+   
     width: 58px;
     height: 26px;
 }
@@ -52,4 +56,30 @@
 .footer-info-li{
     margin-bottom: 10px;
 }
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+@media screen and (min-width: 375px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+}
+
+.footer-contacts-box{
+    padding: 20px;
+   
+}
+
 
