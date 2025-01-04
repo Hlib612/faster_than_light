@@ -4,8 +4,8 @@
    padding: 20px;
 }
 
-
 .footer-menu{
+    
    margin: 10px;
     color: white;
 }
@@ -29,7 +29,7 @@
 }
 
 .footer-social-nets{
-    display: inline-block;
+   
     margin: 0 10px;
     width: 58px;
     height: 26px;
@@ -41,7 +41,7 @@
 }
 
 .footer-social-instagram{
-    fill:  black;
+    fill:   #1E1823;
     stroke:  #FCF1E0;
     width: 58px;
     height: 26px;
@@ -49,7 +49,7 @@
 }
 
 .footer-social-twitter{
-    fill:  black;
+    fill:   #1E1823;
     stroke:  #FCF1E0;
     width: 58px;
     height: 26px;
@@ -60,17 +60,21 @@
 }
 
 .footer{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
-@media screen and (min-width: 375px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 
 @media screen and (min-width: 768px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+
+    
+}
+@media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
 }
 
 }
@@ -80,4 +84,7 @@
    
 }
 
+.footer-title2{
+    color: $focusColor;
+}
 
