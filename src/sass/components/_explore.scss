@@ -1,13 +1,15 @@
 .explore{
     background-image:    url(../img/explore/background_mobile_1x.jpg) ;
-margin-bottom: 15px;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
 padding: 20px;
-top: 20px;
+
    
 }
 
 .explore-title{
-   padding: 15px;
+   
     color: #ffffff;
     font-size: 20px;
 
@@ -28,9 +30,8 @@ top: 20px;
     background-color: #FD9222;
     width: 128px;
     height: 41px;
-    bottom: 12px;
     border-radius: 19px;
-    gap: 14px;
+    
 }
 
 .explore{
@@ -43,12 +44,8 @@ top: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 
-@media screen and (min-width: 1200px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
 }

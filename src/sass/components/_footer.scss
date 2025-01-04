@@ -58,8 +58,8 @@
 }
 
 .footer{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
 @media screen and (min-width: 375px) {
     padding-top: 20px;
@@ -67,14 +67,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-@media screen and (min-width: 1200px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
 }
 
 .footer-contacts-box{
