@@ -1,8 +1,10 @@
 .explore{
     background-image:    url(../img/explore/background_mobile_1x.jpg) ;
-margin-bottom: 15px;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
 padding: 20px;
-top: 20px;
+
    
 }
 
@@ -26,7 +28,6 @@ top: 20px;
     background-color: #FD9222;
     width: 128px;
     height: 41px;
-    bottom: 12px;
     border-radius: 19px;
     gap: 14px;
 }
