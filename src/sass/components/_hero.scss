@@ -71,17 +71,16 @@
     text-align: start;
     max-width: 280px;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: -.03em;
     color: $hoverColor;
     margin-bottom: 32px;
     
     @media screen and (min-width: 768px) {
-        padding-top: 390px;
         min-height: auto;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 28px;
         line-height: 120%;
         letter-spacing: -0.03em;
         color: #fff;
@@ -94,6 +93,8 @@
 .chocolate-button-scroll-down{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 .chocolate-button{
@@ -143,10 +144,10 @@
     display: flex;
     gap: 12px;
     align-items: center;
-    margin-left: auto;
 
     @media screen and (min-width: 768px) {
           height: 38px;
+          margin-left: auto;
 }
 }
 
@@ -157,12 +158,10 @@
     height: 28px;
 }
 
-@media screen and (min-width: 768px) {
-    .scroll-icon {
-      width: 28px;
-      height: 28px;
-    }
-}
+.scroll-icon {
+    width: 28px;
+    height: 28px;
+  }
 
 .small-icon-down{
     fill: orange;
