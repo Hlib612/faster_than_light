@@ -115,3 +115,43 @@
         margin-bottom: 18px;
     }
 }
+
+.footer-social-instagram:hover{
+    stroke:  #FD9222;
+    width: 22px;
+    height: 22px;
+
+    @media (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.footer-social-twitter:hover{
+
+    stroke:  #FD9222;
+    width: 22px;
+    height: 22px;
+   
+
+    @media (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.footer-info-li:hover{
+    color: #FD9222;
+    transform: scale(1.1); 
+    
+}
+
+.footer-contacts-list:hover{
+    color: #FD9222;
+    
+}
+
+.footer-email-list:hover{
+    color: #FD9222;
+   
+}
