@@ -1,7 +1,12 @@
 
 .body{
-    background-color: #FAFAFA;
+    background-color: rgb(194, 194, 194);
     color: black;
+    font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
 }
 .flex{
     display: flex;
@@ -10,4 +15,7 @@
     @media screen and (max-width:768px) {
         display: none;
     }
+}
+.iframe{
+    max-width: 100%;
 }
