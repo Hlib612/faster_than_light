@@ -1,97 +1,94 @@
-.explore{
-    background-image:    url(../img/explore/background_mobile_1x.jpg) ;
-background-repeat: no-repeat;
-background-size: cover;
-text-align: center;
-padding: 20px;
-@media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../img/explore/background_mobile_2x.jpg)
-  }
-
-   
-}
-
-.explore-title{
-   
-    color: #ffffff;
-    font-size: 20px;
-
-}
-.explore-text{
-    margin-bottom: 15px;
-    margin-top: 15px;
-    color: #ffffff;
-    font-size: 14px;
-}
-
-.explore-subscribe-button{
-    padding: 10px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 37px;
-    color: #ffffff;
-    background-color: #FD9222;
-    width: 128px;
-    height: 41px;
-    border-radius: 19px;
-    
-}
-
-.explore{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
-
-@media screen and (min-width: 768px) {
-    padding-top: 72px;
-    padding-bottom: 72px;
-        background-image:    url(../img/explore/background_tablet_1x.jpg) ;
-        background-repeat: no-repeat;
-        text-align: center;
-        @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../img/explore/background_tablet_2x.jpg);
-  }
-    
-    .explore-title{
-        color: white;
-        font-size: 24px;
-        align-items: center;
-    }
-    .explore-text{
-       font-size:"Montserrat" 24px ; 
-       align-items: center;
-    }
-    .explore-subscribe-button{
-        padding: 10px;
-        margin: 0 auto;
-        display: block;
-        margin-top: 37px;
-        color: #ffffff;
-        background-color: #FD9222;
-        width: 128px;
-        height: 41px;
-        border-radius: 19px;
-    }
-}
-@media (min-width: 1200px) {
-    padding-top: 128px;
-    padding-bottom: 128px;
-  }
-  .explore{
-    background-image:    url(../img/explore/background_desktop_1x.jpg) ;
+.explore {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-image: url('../img/explore/background_mobile_1x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     text-align: center;
-    height: 370px;
+  
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../img/explore/background_desktop_2x.jpg);
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../img/explore/background_mobile_2x.jpg');
+    }
+  
+    @media (min-width: 768px) {
+      padding-top: 72px;
+      padding-bottom: 72px;
+  
+      background-image: url('../img/explore/background_tablet_1x.jpg');
+  
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../img/explore/background_tablet_2x.jpg');
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      background-image: url('../img/explore/background_desktop_1x.jpg');
+  
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../img/explore/background_desktop_2x.jpg');
+      }
+    }
   }
-}
-
-}
+  
+  .explore-title {
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 24px;
+    width: 290px;
+    @media (min-width: 768px) {
+      width: 378px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  .explore-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    width: 326px;
+    margin: auto;
+    margin-bottom: 24px;
+    color: #ffffff;
+    @media (min-width: 768px) {
+      width: 467px;
+    }
+  }
+  
+  .explore-subscribe-button {
+    margin: 0 auto;
+    display: block;
+    color: #ffffff;
+    background-color: #fd9222;
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 128px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 14px;
+    @media (min-width: 768px) {
+      padding: 14px 40px;
+      width: 172px;
+      height: 50px;
+      font-size: 18px;
+    }
+  }
+  .explore-subscribe-button:hover{
+ 
+    transform: scale(1.1); 
+            box-shadow: 0 4px 15px rgb(0, 0, 0);
+  }
