@@ -1,4 +1,16 @@
 .buy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 311px;
+    height: 1008px;
+    overflow: hidden;
+    background-color: #fff;
+    @media (min-width: 768px) {
+      width: 538px;
+      height: 1058px;
+    }
     &_div {
         display: flex;
         flex-direction: column;
