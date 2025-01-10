@@ -62,14 +62,14 @@
     stroke: $focusColor;
 }
 
-.socials-instagram{
-    fill: $hoverColor;
-    stroke: $textColor;
+.social-networks{
+    fill: #ffffff;
+    stroke: #000;
 }
 
-.social-twitter{
-    fill: $hoverColor;
-    stroke: $textColor;
+.socials-instagram{
+    fill: #ffffff;
+    stroke: #000;
 }
 
 .contacts{
@@ -78,6 +78,27 @@
     margin-left: auto;
     gap: 18px;
     @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.button-menu-burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.svg-menu-burger{
+    fill: black;
+    stroke: #000;
+
+    @media screen and (min-width: 768px) {
+        fill: #000;
+        stroke: #000;
+    }
+
+    @media screen and (min-width: 1200px ) {
         display: none;
     }
 }
