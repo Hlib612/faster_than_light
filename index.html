@@ -16,8 +16,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/faster_than_light/assets/index-4fb91c6b.js"></script>
-    <link rel="stylesheet" href="/faster_than_light/assets/index-5c83d3e1.css">
+    <script type="module" crossorigin src="/faster_than_light/assets/index-db3d4b2f.js"></script>
+    <link rel="stylesheet" href="/faster_than_light/assets/index-387760f5.css">
   </head>
   <body>
     <header class="header">
@@ -520,7 +520,7 @@
                 Chocolate is a true indulgence that will leave you craving more. Made
                 with only the finest ingredients and handcrafted with the utmost
                 care, each piece is a work of art that is sure to please.</p>
-            <button class="explore-subscribe-button">Subscribe</button>
+            <button class="explore-subscribe-button" data-subscribe-modal-open>Subscribe</button>
         </nav>
     </div>
 </section>
@@ -654,23 +654,23 @@
 </form>
 </div>
 </div>
-    
-    <div class="backdrop">
+     -->
+    <div class="backdrop is-hidden" data-subscribe-modal>
     <div class="subscribe-modal">
         <div class="modal-subscribe-picture">
             <picture>
-                <source media="(min-width: 1200px)" srcset="./img/subcribe-modal/desktop/subscribe-image-desktop@1x.jpg 1x,
-                ./img/subcribe-modal/desktop/subscribe-image-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="/faster_than_light/assets/subscribe-image-desktop@1x-c96b8a08.jpg 1x, /faster_than_light/assets/subscribe-image-desktop@2x-659fd822.jpg 2x">
+              
                 <source media="(min-width: 768px)" srcset="./img/subcribe-modal/desktop/subscribe-image-tablet@1x.jpg 1x,
                 ./img/subcribe-modal/desktop/subscribe-image-tablet@1x.jpg 2x">
                 <source media="(max-width: 767px)" srcset="./img/subcribe-modal/desktop/subscribe-image-mobile@1x.jpg 1x,
                 ./img/subcribe-modal/desktop/subscribe-image-mobile@2x.jpg 2x">
-                <img src="./img/subcribe-modal/desktop/subscribe-image-desktop@1x.jpg" alt="chocolate-form">
+                <img src="/faster_than_light/assets/subscribe-image-desktop@1x-c96b8a08.jpg" alt="chocolate-form">
             </picture>
         </div>
-        <button class="modal-subscribe-button-close">
+        <button class="modal-subscribe-button-close" data-subscribe-modal-close>
             <svg>
-                <use href="./img/symbol-defs.svg#icon-close-btn"></use>
+                <use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-close-btn"></use>
             </svg>
         </button>
         <h2 class="modal-subscribe-tittle">
@@ -684,8 +684,7 @@
             </button>
         </form>
     </div>
-</div> -->
-
+</div>
     
   </body>
 </html>
