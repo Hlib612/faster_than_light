@@ -12,7 +12,7 @@ letter-spacing: -0.02em;
     display: flex;
 }
 .mob_display{
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1200px) {
         display: none;
     }
 }
