@@ -80,19 +80,8 @@
     }
 
     &_input {
-        border: 1.50px solid rgba(17, 17, 17, 0.05);
-        border-radius: 8px;
-        padding: 13px 18px;
-        width: 263px;
-        height: 45px;
-
-        @media screen and (min-width: 768px) {
-            border-radius: 13px;
-            padding: 22px 24px;
-            width: 513px;
-            height: 66px;
+       @extend %input
         }
-    }
 }
 .form_div{
     display: flex;
