@@ -1,0 +1,62 @@
+.review_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 471px;
+  overflow: hidden;
+  background-color: #f7f5f5;
+  z-index: 1000;
+  @media (min-width: 768px) {
+    width: 518px;
+    height: 632px;
+  }
+  &_form{
+    margin-bottom: 18px;
+  }
+  &_input {
+    @extend %input;
+    width: 263px;
+    height: 45px;
+    margin-bottom: 14px;
+    @media (min-width: 768px) {
+      width: 437px;
+      height: 66px;
+      margin-bottom: 18px;
+    }
+  }
+  &_textarea {
+    border: 2px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    padding: 13px 18px 60px 18px;
+    width: 263px;
+    height: 91px;
+    background-color: transparent;
+    @media screen and (min-width: 768px) {
+      border-radius: 13px;
+      padding: 22px 24px 93px 24px;
+      width: 513px;
+      height: 137px;
+    }
+  }
+  &_button {
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 93px;
+    height: 41px;
+    background-color: $focusColor;
+    color: white;
+    @media screen and (min-width: 768px) {
+      padding: 14px 40px;
+      width: 117px;
+      height: 45px;
+    }
+  }
+}
+.margin{
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+      }
+}
