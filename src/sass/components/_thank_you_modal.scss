@@ -1,0 +1,59 @@
+.thank_you {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  width: 311px;
+  height: 350px;
+  overflow: hidden;
+  background-color: #f7f5f5;
+  z-index: 1000;
+  @media (min-width: 768px) {
+    border-radius: 15px;
+    width: 516px;
+    height: 414px;
+  }
+  &_tittle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fcf1e0;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 117%;
+    }
+  }
+  &_description {
+    font-size: 14px;
+    line-height: 114%;
+    color: white;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 133%;
+    }
+  }
+  &_close_button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $hoverColor;
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &_close_button_svg {
+    @extend %close_cross;
+    width: 16px;
+    height: 16px;
+    background-color: $focusColor;
+    @media (min-width: 768px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
