@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(243, 243, 243);
     color: black;
     font-family: "Montserrat", sans-serif;
 font-weight: 400;
@@ -12,7 +12,7 @@ letter-spacing: -0.02em;
     display: flex;
 }
 .mob_display{
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1200px) {
         display: none;
     }
 }
@@ -41,4 +41,18 @@ a {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+%input{
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+        border-radius: 8px;
+        padding: 13px 18px;
+        width: 263px;
+        height: 45px;
+
+        @media screen and (min-width: 768px) {
+            border-radius: 13px;
+            padding: 22px 24px;
+            width: 513px;
+            height: 66px;
+        }
 }
