@@ -1,9 +1,12 @@
 // import Swiper JS
 import Swiper from 'swiper';
+import {  Pagination } from 'swiper/modules';
 // import Swiper styles
 import 'swiper/css';
-'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+import 'swiper/css/pagination';
+
     const swiper = new Swiper(".productsSwiper", {
+      modules: [ Pagination],
         // slidesPerView: 1,
       //відстань між слайдами
         spaceBetween: 18,
