@@ -1,13 +1,13 @@
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-review-modal>
 <div class="review_modal">
-    <svg class=""><use href="./img/symbol-defs.svg#icon-btn-close"></use></svg>
-<h2 class="headline">LEAVE A REVIEW ABOUT <span class="focus_span">OUR CHOCOLATE</span></h2>
-<form>
-    <input>
-    <input>
-    <input>
-    <textarea></textarea>
-    <button type="submit"></button>
+    <button data-review-modal-close><svg class="review_modal_svg"><use href="./img/symbol-defs.svg#icon-btn-close"></use></svg></button>
+<h2 class="headline margin">LEAVE A REVIEW ABOUT <span class="focus_span">OUR CHOCOLATE</span></h2>
+<form class="review_modal_form">
+    <input class="review_modal_input" placeholder="Name">
+    <input class="review_modal_input" placeholder="Email">
+    <input class="review_modal_input" placeholder="Phone number">
+    <textarea class="review_modal_textarea" placeholder="Enter text"></textarea>
+    <button type="submit" class="review_modal_button"></button>
 </form>
 </div>
 </div>

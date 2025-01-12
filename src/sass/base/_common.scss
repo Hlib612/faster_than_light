@@ -71,4 +71,8 @@ a {
 div[data-buy-modal] {
   overflow-y: scroll;
 }
+input::placeholder{
+  font-size: 18px;
+    color: rgba(64, 64, 64, 0.3);
+}
 // .swiper-pagination-bullet-active

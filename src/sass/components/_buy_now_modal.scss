@@ -30,6 +30,9 @@
   }
   &_svg {
     @extend %close_cross;
+    position: absolute;
+    top: 24px;
+    right: 24px;
   }
   &_button {
     border: 1px solid rgba(17, 17, 17, 0.1);
@@ -121,10 +124,6 @@
   &_input {
     @extend %input;
     background-color: transparent;
-  }
-  &_input::placeholder{
-    font-size: 18px;
-    color: rgba(64, 64, 64, 0.3);
   }
   &_textarea::placeholder{
     font-size: 18px;
