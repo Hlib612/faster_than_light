@@ -4,9 +4,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 311px;
-    height: 1008px;
+    // height: 1008px;
     overflow: hidden;
     background-color: #fff;
+    z-index: 100000000000000;
     @media (min-width: 768px) {
       width: 538px;
       height: 1058px;
@@ -26,7 +27,9 @@
             height: 196px;
         }
     }
-
+    &_svg{
+        @extend %close_cross
+    }
     &_button {
         border: 1px solid rgba(17, 17, 17, 0.1);
         border-radius: 100px;
@@ -84,6 +87,10 @@
         }
 }
 .form_div{
+    display: flex;
+    flex-direction: column;
+}
+.form_special_div{
     display: flex;
     flex-direction: column;
 }
