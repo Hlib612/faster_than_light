@@ -16,8 +16,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/faster_than_light/assets/index-fbca4b7e.js"></script>
-    <link rel="stylesheet" href="/faster_than_light/assets/index-641bab47.css">
+    <script type="module" crossorigin src="/faster_than_light/assets/index-4e2eb2ef.js"></script>
+    <link rel="stylesheet" href="/faster_than_light/assets/index-e88b807b.css">
   </head>
   <body>
     <header class="header">
@@ -504,7 +504,7 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <button class="leave_review_button">
+            <button class="leave_review_button" data-review-modal-open>
                 Leave a review
             </button>
         </div>
@@ -620,60 +620,58 @@
             <label class="buy_label">Comment</label>
             <textarea class="buy_textarea" placeholder="Enter text"></textarea>
         </div>
-            <button class="buy_form_button">Submit</button>
+            <button class="buy_form_button" data-thank_you-modal-open>Submit</button>
         </form>
     </div>
 </div>
-    <!-- <div class="backdrop">
-    <div class="thankyou-modal">
-        <div class="modal-thankyou-background-color"></div>
-    <button class="modal-thankyou-close">
-        <svg>
-            <use href="./img/symbol-defs.svg#icon-close-btn"></use>
+    <div class="backdrop is-hidden" data-thank_you-modal>
+    <div class="thank_you">
+    <button class="thank_you_close_button" data-thank_you-modal-close>
+        <svg class="thank_you_close_button_svg">
+            <use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-close-btn"></use>
         </svg>
     </button>
-    <h2 class="thankyou-tittle">
-        thank you 
-        for your feedback!
+    <h2 class="thank_you_tittle">
+        thank you!
     </h2>
-    <p class="thankyou-text">
-        We are so happy to hear from you!
+    <p class="thank_you_description">
+        We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.
     </p>
+    <img href="#" alt="beutifull and tasty chocolate">
     </div>
 </div>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-review-modal>
 <div class="review_modal">
-    <svg class=""><use href="./img/symbol-defs.svg#icon-btn-close"></use></svg>
-<h2 class="headline">LEAVE A REVIEW ABOUT <span class="focus_span">OUR CHOCOLATE</span></h2>
-<form>
-    <input>
-    <input>
-    <input>
-    <textarea></textarea>
-    <button type="submit"></button>
+    <button data-review-modal-close><svg class="review_modal_svg"><use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-btn-close"></use></svg></button>
+<h2 class="headline margin">LEAVE A REVIEW ABOUT <span class="focus_span">OUR CHOCOLATE</span></h2>
+<form class="review_modal_form">
+    <input class="review_modal_input" placeholder="Name">
+    <input class="review_modal_input" placeholder="Email">
+    <input class="review_modal_input" placeholder="Phone number">
+    <textarea class="review_modal_textarea" placeholder="Enter text"></textarea>
+    <button type="submit" class="review_modal_button"></button>
 </form>
 </div>
 </div>
-     -->
-    <!-- <div class="backdrop is-hidden " data-subscribe-modal>
+    <!--  -->
+    <div class="backdrop is-hidden " data-subscribe-modal>
     <div class="subscribe-modal">
         <div class="modal-subscribe-picture">
             <picture>
              
-                <source media="(min-width: 1200px)" srcset="./img/subcribe-modal/desktop/subscribe-image-desktop@1x.jpg 1x,
-                ./img/subcribe-modal/desktop/subscribe-image-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="/faster_than_light/assets/subscribe-image-desktop@1x-c96b8a08.jpg 1x, /faster_than_light/assets/subscribe-image-desktop@2x-659fd822.jpg 2x">
               
                 <source media="(min-width: 768px)" srcset="./img/subcribe-modal/desktop/subscribe-image-tablet@1x.jpg 1x,
                 ./img/subcribe-modal/desktop/subscribe-image-tablet@1x.jpg 2x">
               
                 <source media="(max-width: 767px)" srcset="./img/subcribe-modal/desktop/subscribe-image-mobile@1x.jpg 1x,
                 ./img/subcribe-modal/desktop/subscribe-image-mobile@2x.jpg 2x">
-                <img src="./img/subcribe-modal/desktop/subscribe-image-desktop@1x.jpg" alt="chocolate-form">
+                <img src="/faster_than_light/assets/subscribe-image-desktop@1x-c96b8a08.jpg" alt="chocolate-form">
             </picture>
         </div>
         <button class="modal-subscribe-button-close" data-subscribe-modal-close>
             <svg>
-                <use href="./img/symbol-defs.svg#icon-btn-close"></use>
+                <use href="/faster_than_light/assets/symbol-defs-e59766d2.svg#icon-btn-close"></use>
             </svg>
         </button>
         <h2 class="modal-subscribe-tittle">
@@ -690,7 +688,7 @@
         </form>
     </div>
 </div>
-<script src="../js/subcribe-modal.js"></script> -->
+<script src="../js/subcribe-modal.js"></script>
     
   </body>
 </html>
