@@ -1,13 +1,14 @@
 .buy {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   width: 311px;
   // height: 1008px;
   overflow: hidden;
   background-color: #f7f5f5;
   z-index: 1000;
+  padding: 32px 24px;
   @media (min-width: 768px) {
     width: 609px;
     height: 1058px;
