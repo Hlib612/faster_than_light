@@ -1,13 +1,14 @@
 .buy {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   width: 311px;
   // height: 1008px;
   overflow: hidden;
   background-color: #f7f5f5;
   z-index: 1000;
+  padding: 32px 24px;
   @media (min-width: 768px) {
     width: 609px;
     height: 1058px;
@@ -22,7 +23,10 @@
     width: 230px;
     height: 256px;
     background-color: white;
-
+    animation-name: wave;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     @media screen and (min-width: 768px) {
       width: 160px;
       height: 196px;
@@ -144,5 +148,40 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     column-gap: 21px;
+  }
+}
+@keyframes wave{
+  0%{
+    transform: scale(0);
+  }
+  10%{
+    transform: scale(0.1);
+  }
+  20%{
+    transform: scale(0.2);
+  }
+  30%{
+    transform: scale(0.3);
+  }
+  40%{
+    transform: scale(0.4);
+  }
+  50%{
+    transform: scale(0.5);
+  }
+  60%{
+    transform: scale(0.6);
+  }
+  70%{
+    transform: scale(0.7);
+  }
+  80%{
+    transform: scale(0.8);
+  }
+  90%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(10);
   }
 }

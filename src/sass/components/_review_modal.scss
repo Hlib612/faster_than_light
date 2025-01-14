@@ -1,18 +1,30 @@
 .review_modal {
+  padding: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 311px;
-  height: 471px;
+  min-height: 471px;
   overflow: hidden;
   background-color: #f7f5f5;
   z-index: 1000;
   @media (min-width: 768px) {
+    padding: 40px;
     width: 518px;
     height: 632px;
   }
-  &_form{
+  &_svg {
+    position: absolute;
+    @extend %close_cross;
+    top: 14px;
+    right: 14px;
+    @media (min-width: 768px) {
+      top: 24px;
+      right: 24px;
+    }
+  }
+  &_form {
     margin-bottom: 18px;
   }
   &_input {
@@ -26,6 +38,12 @@
       margin-bottom: 18px;
     }
   }
+  &_input_svg{
+    background-image: url('src/img/svg for modals forms/Ua_prapor.svg');
+    background-size: 24px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  }
   &_textarea {
     border: 2px solid rgba(17, 17, 17, 0.05);
     border-radius: 8px;
@@ -33,6 +51,7 @@
     width: 263px;
     height: 91px;
     background-color: transparent;
+    margin-bottom: 18px;
     @media screen and (min-width: 768px) {
       border-radius: 13px;
       padding: 22px 24px 93px 24px;
@@ -54,9 +73,11 @@
     }
   }
 }
-.margin{
-    margin-bottom: 32px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 40px;
-      }
+.margin {
+  margin-bottom: 32px;
+  text-align: start;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    max-width: 298px;
+  }
 }

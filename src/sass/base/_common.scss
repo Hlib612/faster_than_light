@@ -23,7 +23,7 @@ a {
 }
 
 .backdrop {
-  z-index: 100px;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,7 +58,6 @@ a {
 %close_cross {
   width: 24px;
   height: 24px;
-  // fill: black;
   stroke: black;
   @media screen and (min-width: 768px) {
     width: 28px;
@@ -72,6 +71,10 @@ div[data-buy-modal] {
   overflow-y: scroll;
 }
 input::placeholder{
+  font-size: 18px;
+    color: rgba(64, 64, 64, 0.3);
+}
+textarea::placeholder{
   font-size: 18px;
     color: rgba(64, 64, 64, 0.3);
 }
