@@ -47,13 +47,17 @@ a {
   padding: 13px 18px;
   width: 263px;
   height: 45px;
-
   @media screen and (min-width: 768px) {
     border-radius: 13px;
     padding: 22px 24px;
     width: 513px;
     height: 66px;
   }
+}
+%transition{
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 %close_cross {
   width: 24px;
