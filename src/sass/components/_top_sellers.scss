@@ -93,6 +93,7 @@ max-width: 306px;
 }
 }
 .top_sellers_button{
+    @extend %transition;
     border-radius: 100px;
 width: 120px;
 height: 41px;
@@ -109,6 +110,7 @@ height: 50px;
 }
 .top_sellers_button:hover{
     @extend %transition;
-    background-color: $backgroundColor;
+    background-color: $hoverColor;
     color: $focusColor;
+    border: 1px solid $focusColor;
 }
