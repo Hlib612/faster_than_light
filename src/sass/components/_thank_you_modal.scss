@@ -1,0 +1,76 @@
+.thank_you {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 311px;
+  height: 350px;
+  overflow: hidden;
+  background-color: $focusColor;
+  z-index: 1000;
+  // background-image: url('src/img/thank_you_and_for_feedback/chocolate_1x.png');
+  // background-size: 296px 399px;
+  // background-repeat: no-repeat;
+  @media (min-width: 768px) {
+    border-radius: 15px;
+    width: 516px;
+    height: 414px;
+  }
+  &_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 233px;
+  }
+  &_tittle {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    color: #fcf1e0;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 117%;
+    }
+  }
+  &_description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 114%;
+    color: white;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 133%;
+    }
+  }
+  &_close_button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $hoverColor;
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &_close_button_svg {
+    @extend %close_cross;
+    stroke: $focusColor;
+    width: 16px;
+    height: 16px;
+    @media (min-width: 768px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

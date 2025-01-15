@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden">
-    <div class="buy data-buy-modal">
-        <button class="buy_close_button"><svg class="buy_svg"><use href="./img/symbol-defs.svg#icon-btn-close"></use></svg></button>
+<div class="backdrop is-hidden" data-buy-modal>
+    <div class="buy">
+        <button class="buy_close_button" data-buy-modal-close><svg class="buy_svg"><use href="./img/symbol-defs.svg#icon-btn-close"></use></svg></button>
         <h2 class="headline"><span class="focus_span">bUY</span> nOW</h2>
         <ul class="buy_img-list">
             <li class="buy_item">
@@ -26,27 +26,27 @@
             <div class="form_special_div">
             <div class="form_div">
             <label class="buy_label">Personal information</label>
-            <input type="name" name="user_name" class="buy_sm_input">
+            <input type="name" name="user_name" class="buy_sm_input" placeholder="Name">
         </div>
-            <input type="name" name="user_surname" class="buy_sm_input">
+            <input type="name" name="user_surname" class="buy_sm_input" placeholder="Surname">
         </div>
             <div class="form_div">
             <label class="buy_label">Email</label>
-            <input type="email" name="user_email" class="buy_input">
+            <input type="email" name="user_email" class="buy_input" placeholder="Enter your email">
         </div>
             <div class="form_div">
             <label class="buy_label">Phone number</label>
-            <input type="phone" name="user_phone" class="buy_input">
+            <input type="phone" name="user_phone" class="buy_input" placeholder="Phone number">
         </div>
             <div class="form_div">
             <label class="buy_label">Card number</label>
-            <input type="number" name="user_card_number" class="buy_input">
+            <input type="number" name="user_card_number" class="buy_input" placeholder="Enter  card">
         </div>
             <div class="form_div">
             <label class="buy_label">Comment</label>
-            <textarea class="buy_textarea"></textarea>
+            <textarea class="buy_textarea" placeholder="Enter text"></textarea>
         </div>
-            <button class="buy_form_button">Submit</button>
+            <button class="buy_form_button" data-thank_you-modal-open>Submit</button>
         </form>
     </div>
 </div>

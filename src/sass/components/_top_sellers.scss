@@ -81,3 +81,29 @@ color: $focusColor;
     }
     
 }
+.top_sellers_description{
+    font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
+margin-bottom: 20px;
+max-width: 306px;
+@media screen and (min-width:1200px){
+    max-width: 407px;
+}
+}
+.top_sellers_button{
+    border-radius: 100px;
+width: 120px;
+height: 41px;
+background-color: $focusColor;
+color: white;
+font-weight: 600;
+font-size: 14px;
+@media screen and (min-width:768px){
+    font-weight: 500;
+font-size: 18px;
+width: 162px;
+height: 50px;
+}
+}

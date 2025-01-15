@@ -1,30 +1,29 @@
-
-body{
-    background-color: rgb(243, 243, 243);
-    color: black;
-    font-family: "Montserrat", sans-serif;
-font-weight: 400;
-font-size: 14px;
-line-height: 129%;
-letter-spacing: -0.02em;
+body {
+  background-color: #f7f5f5;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
 }
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
-.mob_display{
-    @media screen and (max-width:1200px) {
-        display: none;
-    }
+.mob_display {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
-.iframe{
-    max-width: 100%;
+.iframe {
+  max-width: 100%;
 }
 a {
-    
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .backdrop {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,22 +41,45 @@ a {
   pointer-events: none;
   visibility: hidden;
 }
-%input{
-    border: 1.50px solid rgba(17, 17, 17, 0.05);
-        border-radius: 8px;
-        padding: 13px 18px;
-        width: 263px;
-        height: 45px;
-
-        @media screen and (min-width: 768px) {
-            border-radius: 13px;
-            padding: 22px 24px;
-            width: 513px;
-            height: 66px;
-        }
+%input {
+  border: 2px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  padding: 13px 18px;
+  width: 263px;
+  height: 45px;
+  @media screen and (min-width: 768px) {
+    border-radius: 13px;
+    padding: 22px 24px;
+    width: 513px;
+    height: 66px;
+  }
 }
 %transition{
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+%close_cross {
+  width: 24px;
+  height: 24px;
+  stroke: black;
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
+div[data-buy-modal] {
+  overflow-y: scroll;
+}
+input::placeholder{
+  font-size: 18px;
+    color: rgba(64, 64, 64, 0.3);
+}
+textarea::placeholder{
+  font-size: 18px;
+    color: rgba(64, 64, 64, 0.3);
+}
+// .swiper-pagination-bullet-active
