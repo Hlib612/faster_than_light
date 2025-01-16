@@ -121,6 +121,12 @@
     color: #fff;
 }
 
+.button-hero-chocolate-one:hover{
+        background-color: $hoverColor;
+        color: $focusColor;
+        border: 1px solid $focusColor;
+}
+
 .buttons-two{
     display: flex;
     justify-content: center;
@@ -136,8 +142,18 @@
     }
 }
 
+.buttons-two:hover{
+        background-color: #fff;
+        color: $focusColor;
+        border: 1px solid $focusColor;
+    }
+
 .button-hero-chocolate-two{
     color: #fff;
+}
+
+.button-hero-chocolate-two:hover{
+    color: $focusColor;
 }
 
 .scroll-button{
