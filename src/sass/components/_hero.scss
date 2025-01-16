@@ -120,11 +120,11 @@
     background-color: $focusColor;
     color: #fff;
 }
-
-.button-hero-chocolate-one:hover{
-        background-color: $hoverColor;
-        color: $focusColor;
-        border: 1px solid $focusColor;
+.button-hero-chocolate-one:hover {
+    @extend %transition;
+    background-color: $hoverColor;
+    color: $focusColor;
+    border: 1px solid $focusColor;
 }
 
 .buttons-two{
@@ -141,17 +141,15 @@
         min-width: 183px;
     }
 }
-
-.buttons-two:hover{
-        background-color: #fff;
-        color: $focusColor;
-        border: 1px solid $focusColor;
-    }
-
+.buttons-two:hover {
+    @extend %transition;
+    background-color: $hoverColor;
+    color: $focusColor;
+    border: 1px solid $focusColor;
+}
 .button-hero-chocolate-two{
     color: #fff;
 }
-
 .button-hero-chocolate-two:hover{
     color: $focusColor;
 }
@@ -167,6 +165,11 @@
 }
 }
 
+.scroll-button:hover{
+    @extend %transition;
+    color: $focusColor;
+}
+
 .scroll-container{
     background-color: white;
     border-radius: 50%;
@@ -174,10 +177,23 @@
     height: 28px;
 }
 
-.scroll-icon {
+.scroll-container:hover{
+    background-color: $focusColor;
+}
+
+.scroll-icon{
     width: 28px;
     height: 28px;
   }
+
+.scroll-icon:hover{
+    fill: #fff;
+    color: #fff;
+}
+
+.small-icon-down:hover{
+    fill: #fff;
+}
 
 .small-icon-down{
     fill: orange;
