@@ -60,6 +60,9 @@
     top: 24px;
     right: 24px;
   }
+  &_svg:hover{
+    @extend %close_cross_hover;
+  }
   &_button {
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
@@ -68,7 +71,12 @@
     height: 33px;
     background-color: #f7f5f5;
   }
-
+  &_form_button:hover{
+    @extend %transition;
+    background-color: $hoverColor;
+    color: $focusColor;
+    border: 1px solid $focusColor;
+  }
   &_img {
     width: 166px;
     height: 148px;

@@ -73,4 +73,12 @@
       height: 22px;
     }
   }
+  &_close_button:hover{
+    transition-property: transform;
+    transition-duration: 1500ms;
+    transform: rotate(360deg);
+  }
+  &_close_button:hover &_close_button_svg{
+    transform: scale(1.2);
+  }
 }
