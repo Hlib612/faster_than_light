@@ -129,6 +129,7 @@
 }
 
 .buttons-two{
+    @extend %transition;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +152,7 @@
 }
 
 .button-hero-chocolate-two{
+    @extend %transition;
     color: #fff;
 }
 
@@ -159,6 +161,7 @@
 }
 
 .scroll-button{
+    @extend %transition;
     display: flex;
     gap: 12px;
     align-items: center;
@@ -200,5 +203,6 @@
 }
 
 .small-icon-down{
+    @extend %transition;
     fill: orange;
 }
