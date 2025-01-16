@@ -57,6 +57,11 @@
     }
 }
 
+.nav-links:hover{
+    @extend %transition;
+    color: $focusColor;
+}
+
 .chocolate-icon{
     fill: $hoverColor;
     stroke: $focusColor;
@@ -67,9 +72,21 @@
     stroke: #000;
 }
 
+.social-networks:hover{
+    @extend %transition;
+    fill: #ffffff;
+    stroke: $focusColor;
+}
+
 .socials-instagram{
     fill: #ffffff;
     stroke: #000;
+}
+
+.socials-instagram:hover{
+    @extend %transition;
+    fill: #ffffff;
+    stroke: $focusColor;
 }
 
 .contacts{
@@ -90,7 +107,7 @@
 }
 
 .svg-menu-burger{
-    fill: black;
+    fill: #000;
     stroke: #000;
 
     @media screen and (min-width: 768px) {
