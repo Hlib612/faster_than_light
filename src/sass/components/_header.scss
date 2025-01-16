@@ -57,10 +57,20 @@
     }
 }
 
+.header-nav-items:hover{
+        color: $focusColor;
+}
+
 .chocolate-icon{
     fill: $hoverColor;
     stroke: $focusColor;
 }
+
+.social-contacts:hover{
+    stroke: $focusColor;
+}
+
+
 
 .social-networks{
     fill: #ffffff;
