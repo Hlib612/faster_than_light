@@ -24,6 +24,9 @@
       right: 24px;
     }
   }
+  &_svg:hover {
+    @extend %close_cross_hover;
+  }
   &_form {
     margin-bottom: 18px;
   }
@@ -38,11 +41,11 @@
       margin-bottom: 18px;
     }
   }
-  &_input_svg{
+  &_input_svg {
     background-image: url('src/img/svg for modals forms/Ua_prapor.svg');
     background-size: 24px;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
   }
   &_textarea {
     border: 2px solid rgba(17, 17, 17, 0.05);
@@ -60,6 +63,8 @@
     }
   }
   &_button {
+    font-weight: 600;
+    font-size: 14px;
     border-radius: 100px;
     padding: 12px 28px;
     width: 93px;
@@ -71,6 +76,12 @@
       width: 117px;
       height: 45px;
     }
+  }
+  &_button:hover {
+    @extend %transition;
+    background-color: $hoverColor;
+    color: $focusColor;
+    border: 1px solid $focusColor;
   }
 }
 .margin {

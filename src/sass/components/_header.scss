@@ -59,6 +59,7 @@
 .nav-links:hover{
     @extend %transition;
     color: $focusColor;
+}
 .header-nav-items:hover{
         color: $focusColor;
 }
