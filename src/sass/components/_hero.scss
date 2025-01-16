@@ -120,7 +120,6 @@
     background-color: $focusColor;
     color: #fff;
 }
-
 .button-hero-chocolate-one:hover {
     @extend %transition;
     background-color: $hoverColor;
@@ -142,19 +141,16 @@
         min-width: 183px;
     }
 }
-
 .buttons-two:hover {
     @extend %transition;
     background-color: $hoverColor;
     color: $focusColor;
     border: 1px solid $focusColor;
 }
-
 .button-hero-chocolate-two{
     color: #fff;
 }
-
-.button-hero-chocolate-two:hover {
+.button-hero-chocolate-two:hover{
     color: $focusColor;
 }
 
