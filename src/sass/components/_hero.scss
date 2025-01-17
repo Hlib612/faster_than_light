@@ -103,22 +103,30 @@
     gap: 32px 14px;
 }
 
-.buttons{
+// .buttons{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 100px;
+//     width: 144px;
+//     height: 45px;
+//     color: $focusColor;
+// }
+
+.button-hero-chocolate-one{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    width: 144px;
-    height: 45px;
-    color: $focusColor;
-}
-
-.button-hero-chocolate-one{
-    border-radius: 100px;
-    width: 122px;
-    height: 45px;
+    width: 120px;
+    height: 41px;
     background-color: $focusColor;
     color: #fff;
+    @extend %transition;
+    @media screen and (min-width: 768px){
+        width: 144px;
+        height: 45px;
+    }
 }
 .button-hero-chocolate-one:hover {
     @extend %transition;
@@ -127,33 +135,47 @@
     border: 1px solid $focusColor;
 }
 
-.buttons-two{
-    @extend %transition;
+// .buttons-two{
+//     @extend %transition;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid #fff;
+//     border-radius: 100px;
+//     padding: 2px 30px;
+//     width: 183px;
+//     height: 45px;
+
+//     @media screen and (min-width: 768px){
+//         min-width: 183px;
+//     }
+// }
+// .buttons-two:hover {
+//     @extend %transition;
+//     background-color: $hoverColor;
+//     color: $focusColor;
+//     border: 1px solid $focusColor;
+// }
+.button-hero-chocolate-two{
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #fff;
     border-radius: 100px;
-    padding: 2px 30px;
-    width: 183px;
-    height: 45px;
-
+    width: 159px;
+    height: 41px;
+    color: #fff;
+    @extend %transition;
+    
     @media screen and (min-width: 768px){
-        min-width: 183px;
+        width: 183px;
+        height: 45px;
     }
 }
-.buttons-two:hover {
-    @extend %transition;
+.button-hero-chocolate-two:hover{
     background-color: $hoverColor;
     color: $focusColor;
     border: 1px solid $focusColor;
-}
-.button-hero-chocolate-two{
-    @extend %transition;
-    color: #fff;
-}
-.button-hero-chocolate-two:hover{
-    color: $focusColor;
 }
 
 .scroll-button{
