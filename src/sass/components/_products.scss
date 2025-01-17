@@ -20,6 +20,7 @@
 }
 .swiper.productsSwiper {
   height: 397px;
+  background-color: #fff;
 }
 .products .swiper-slide {
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -62,4 +63,9 @@
   background-color: #fafafa;
   margin-left: auto;
   margin-right: auto;
+}
+.swiper.productsSwiper .swiper-pagination-bullet-active{
+  background-color:$focusColor ;
+  width: 28px;
+  border-radius: 4px;
 }
