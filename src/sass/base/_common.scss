@@ -24,7 +24,32 @@ body {
 a {
   cursor: pointer;
 }
-
+.headline{
+  font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: $textColor;
+text-align: center;
+margin-bottom: 50px;
+@media screen and (min-width:768px){
+  font-size: 24px;
+  line-height: 117%;
+}
+}
+.focus_span{
+  font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: $focusColor;
+@media screen and (min-width:768px){
+  font-size: 24px;
+  line-height: 117%;
+}
+}
 .backdrop {
   z-index: 100;
   position: fixed;
