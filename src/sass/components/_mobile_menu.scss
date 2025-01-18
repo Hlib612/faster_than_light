@@ -23,11 +23,11 @@
 .burger-menu {
   fill: black;
   stroke: #000;
-  height: 14px;
-  width: 21px;
+  height: 28px;
+  width: 28px;
   @media (min-width: 768px) {
-    height: 16px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
   }
 }
 .menu-container {
@@ -46,12 +46,16 @@
    flex-direction: column;
    justify-content: space-between;
    z-index: 1000;
+   @media (min-width: 768px) {
+    width: 290px;
+  }
 }
 
 .menu-container.is-open {
   transform: translateX(0%);
 }
 .mobile-menu-list-link {
+  @extend %transition;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
@@ -61,6 +65,7 @@
   // @extend %transition
 }
 .mobile-menu-list-link:hover {
+  @extend %transition;
   color: $focusColor;
 }
 .btn-close {
@@ -71,12 +76,21 @@
   width: 28px;
 }
 .svg-btn-close {
-  height: 14px;
-  width: 14px;
+  height: 28px;
+  width: 28px;
   stroke: #fff;
+  transition-property: transform;
+  transition-duration: 1000ms;
+  @media (min-width: 768px) {
+    height: 32px;
+  width: 32px;
+  }
 }
 .svg-btn-close:hover{
   stroke:$focusColor ;
+  transform: rotate(360deg);
+  transition-property: transform;
+  transition-duration: 1500ms;
 }
 .mobile-menu-list {
   display: flex;
@@ -90,6 +104,7 @@
 }
 .svg-link{
   stroke: #fff;
+  fill: $backgroundColor;
   height:22px ;
   width:22px ;
 }
