@@ -6,6 +6,7 @@
         align-items: center;
     }
     &_button {
+        @extend %transition;
         font-weight: 600;
         font-size: 14px;
         border: 1px solid $focusColor;
@@ -22,6 +23,11 @@
             height: 50px;
         }
     }
+    &_button:hover{
+        @extend %transition;
+        color: white;
+        background-color: $focusColor;
+    }
 }
 
 .swiper {
@@ -32,7 +38,6 @@
         align-items: center;
         margin-bottom: 50px;
     }
-
     &_img {
         position: relative;
         top: 40px;
@@ -44,6 +49,7 @@
         border: 1px solid rgba(17, 17, 17, 0.1);
         border-radius: 15px;
         padding: 42px 24px 42px 24px;
+        background-color: white;
     }
     &_headline {
         font-weight: 600;
@@ -70,5 +76,21 @@
 
     @media screen and (min-width:1200px) {
         width: 360px;
+    }
+}
+.leave_review .swiper-pagination-bullet{
+    width: 13px;
+    height: 13px;
+}
+.leave_review .swiper-pagination-bullet-active{
+    background-color: $focusColor;
+    width: 28px;
+    height: 13px;
+    border-radius: 100px;
+}
+.leave_review .swiper-wrapper{
+    margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
     }
 }

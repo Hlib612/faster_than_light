@@ -1,96 +1,97 @@
 .explore {
-    padding-top: 62px;
-    padding-bottom: 62px;
-    background-image: url('../img/explore/background_mobile_1x.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-  
+  padding-top: 62px;
+  padding-bottom: 62px;
+  background-image: url('../img/explore/background_mobile_1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../img/explore/background_mobile_2x.jpg');
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    background-image: url('../img/explore/background_tablet_1x.jpg');
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../img/explore/background_mobile_2x.jpg');
-    }
-  
-    @media (min-width: 768px) {
-      padding-top: 72px;
-      padding-bottom: 72px;
-  
-      background-image: url('../img/explore/background_tablet_1x.jpg');
-  
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../img/explore/background_tablet_2x.jpg');
-      }
-    }
-  
-    @media (min-width: 1200px) {
-      background-image: url('../img/explore/background_desktop_1x.jpg');
-  
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../img/explore/background_desktop_2x.jpg');
-      }
+      background-image: url('../img/explore/background_tablet_2x.jpg');
     }
   }
-  
-  .explore-title {
+
+  @media (min-width: 1200px) {
+    background-image: url('../img/explore/background_desktop_1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../img/explore/background_desktop_2x.jpg');
+    }
+  }
+}
+
+.explore-title {
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 24px;
+  width: 290px;
+  @media (min-width: 768px) {
+    width: 378px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 120%;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffffff;
-    font-size: 20px;
-    margin: auto;
-    margin-bottom: 24px;
-    width: 290px;
-    @media (min-width: 768px) {
-      width: 378px;
-      font-size: 24px;
-      font-weight: 600;
-    }
   }
-  .explore-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    width: 326px;
-    margin: auto;
-    margin-bottom: 24px;
-    color: #ffffff;
-    @media (min-width: 768px) {
-      width: 467px;
-    }
+}
+.explore-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  width: 326px;
+  margin: auto;
+  margin-bottom: 24px;
+  color: #ffffff;
+  @media (min-width: 768px) {
+    width: 467px;
   }
-  
-  .explore-subscribe-button {
-    margin: 0 auto;
-    display: block;
-    color: #ffffff;
-    background-color: #fd9222;
-    border-radius: 100px;
-    padding: 12px 28px;
-    width: 128px;
-    height: 41px;
-    font-weight: 600;
-    font-size: 14px;
-    @media (min-width: 768px) {
-      padding: 14px 40px;
-      width: 172px;
-      height: 50px;
-      font-size: 18px;
-    }
+}
+
+.explore-subscribe-button {
+  @extend %transition;
+  margin: 0 auto;
+  display: block;
+  color: #ffffff;
+  background-color: #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 128px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  @media (min-width: 768px) {
+    padding: 14px 40px;
+    width: 172px;
+    height: 50px;
+    font-size: 18px;
   }
-  .explore-subscribe-button:hover{
- 
-    transform: scale(1.1); 
-            color: #fd9222;
-            background-color:#FCF1E0 ;
-            
-  }
+}
+.explore-subscribe-button:hover {
+  @extend %transition;
+  transform: scale(1.1);
+  background-color: #fcf1e0;
+  color: #fd9222;
+  border: 2px solid $focusColor;
+}

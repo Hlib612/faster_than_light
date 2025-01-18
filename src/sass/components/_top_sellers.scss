@@ -1,80 +1,97 @@
-.headline{
-    font-weight: 600;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-color: $textColor;
-text-align: center;
-margin-bottom: 50px;
-@media screen and (min-width:768px){
-    font-size: 24px;
-    line-height: 117%;
-}
-}
-.focus_span{
-    font-weight: 600;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-color: $focusColor;
-@media screen and (min-width:768px){
-    font-size: 24px;
-    line-height: 117%;
-}
-}
-.top_second_div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-}
-.top_sellers_list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    column-gap: 20px;
-    row-gap: 16px;
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        justify-content: center;
-      }
-}
-.top_sellers_item{
-    width: 335px;
-height: 464px;
-@media screen and (min-width:768px){
-    width: 344px;
-}
-@media screen and (min-width:1200px){
-    width: 368px; 
-}
-}
-.top_sellers_img{
-    border-radius: 15px;
+.top_sellers{
+    margin-bottom: 72px;
+    @media screen and (min-width:768px){
+        margin-bottom: 100px;
+    }
+    @media screen and (min-width:1200px){
+        margin-bottom: 128px; 
+    }
+    &_second_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+          }
+    }
+    &_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        column-gap: 20px;
+        row-gap: 16px;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+          }
+    }
+    &_item{
+        width: 335px;
     height: 464px;
-}
-.top_sellers_description{
-    font-weight: 400;
-font-size: 14px;
-line-height: 129%;
-letter-spacing: -0.02em;
-margin-bottom: 20px;
-max-width: 306px;
-@media screen and (min-width:1200px){
-    max-width: 407px;
-}
-}
-.top_sellers_button{
-    border-radius: 100px;
-padding: 12px 28px;
-width: 120px;
-height: 41px;
-background-color: $focusColor;
-color: white;
+    @media screen and (min-width:768px){
+        width: 344px;
+    }
+    @media screen and (min-width:1200px){
+        width: 368px; 
+    }
+    }
+    &_img{
+        border-radius: 15px;
+        height: 464px;
+    }
+    &_description{
+        font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    max-width: 306px;
+    @media screen and (min-width:1200px){
+        max-width: 407px;
+    }
+    }
+    &_button{
+        border-radius: 100px;
+    padding: 12px 28px;
+    width: 120px;
+    height: 41px;
+    background-color: $focusColor;
+    color: white;
+    }
+    &_description{
+        font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    max-width: 306px;
+    @media screen and (min-width:1200px){
+        max-width: 407px;
+    }
+    }
+    &_button{
+        @extend %transition;
+        border-radius: 100px;
+    width: 120px;
+    height: 41px;
+    background-color: $focusColor;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    @media screen and (min-width:768px){
+        font-weight: 500;
+    font-size: 18px;
+    width: 162px;
+    height: 50px;
+    }
+    }
+    &_button:hover{
+        @extend %transition;
+        background-color: $hoverColor;
+        color: $focusColor;
+        border: 1px solid $focusColor;
+    }
+    
 }
