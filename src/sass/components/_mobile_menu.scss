@@ -42,6 +42,10 @@
   padding-right: 46px;
   padding-top: 136px;
   padding-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   z-index: 1000;
 }
 
 .menu-container.is-open {
