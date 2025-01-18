@@ -1,8 +1,13 @@
 .products {
   padding-top: 41px;
+  margin-bottom: 72px;
   @media (min-width: 768px) {
     padding-top: 100px;
+    margin-bottom: 100px;
   }
+  @media screen and (min-width:1200px){
+    margin-bottom: 128px; 
+}
 }
 .products-title {
   font-family: var(--font-family);

@@ -84,6 +84,7 @@
 .footer-social-instagram,
 .footer-social-twitter {
     stroke: #fff;
+    fill: $backgroundColor;
     width: 22px;
     height: 22px;
 
@@ -117,6 +118,7 @@
 }
 
 .footer-social-instagram:hover{
+    @extend %transition;
     stroke:  #FD9222;
     width: 22px;
     height: 22px;
@@ -128,7 +130,7 @@
 }
 
 .footer-social-twitter:hover{
-
+    @extend %transition;
     stroke:  #FD9222;
     width: 22px;
     height: 22px;
@@ -141,17 +143,20 @@
 }
 
 .footer-info-li:hover{
+    @extend %transition;
     color: #FD9222;
     transform: scale(1.1); 
     
 }
 
 .footer-contacts-list:hover{
+    @extend %transition;
     color: #FD9222;
     
 }
 
 .footer-email-list:hover{
+    @extend %transition;
     color: #FD9222;
    
 }
