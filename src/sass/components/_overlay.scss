@@ -13,7 +13,9 @@
   height: 100%;
   background-color: #fff;
   transform: translatey(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  padding: 28px;
+  border-radius: 15px;
 }
 .thumb:hover .overlay {
   transform: translatey(0);
@@ -25,24 +27,30 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111;
+  margin-bottom: 8px;
 }
 .overlay-box {
   display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
 }
 .overlay-btn {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 10px;
   line-height: 120%;
-  color: #fff;
+  color: black;
   border-radius: 35px;
   padding: 6px 16px;
-  width: 81px;
+  max-width: 94px;
   height: 24px;
   border: 1px solid $focusColor;
+  background-color: #fafafa;
 }
 .overlay-btn.orange {
   background-color: $focusColor;
+  max-width: 114px;
+  color: white;
+  padding: 6px 14px;
 }
 .overlay-text {
   font-family: var(--font-family);
