@@ -7,9 +7,14 @@
     padding-bottom: 36px;
   }
   &-box{
+    column-gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
   &-title {
     font-family: var(--font-family);
@@ -37,15 +42,7 @@
     }
     @media (min-width: 1200px) {
       width: 516px;
-    }
-  }
-  &-box-video{
-    margin-bottom: 20px;
-    @media (min-width: 768px) {
-      margin-bottom: 20px;
-    }
-    @media (min-width: 1200px) {
-      margin-bottom: 20px;
+      height: 400px;
     }
   }
   &-video {
@@ -60,7 +57,6 @@
     @media (min-width: 1200px) {
       width: 600px;
       height: 400px;
-      margin-right: 20px;
     }
   }
   &-box-title {
