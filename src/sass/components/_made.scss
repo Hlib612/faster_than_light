@@ -1,11 +1,16 @@
 .made {
-    padding-bottom: 20px;
-    @media (min-width:768px) {
-        padding-bottom: 32px;
-    }
-    @media (min-width:1200px) {
-        padding-bottom: 36px;
-    }
+  padding-bottom: 20px;
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 36px;
+  }
+  &-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &-title {
     font-family: var(--font-family);
     font-weight: 600;
@@ -20,9 +25,27 @@
   &-title-designe {
     color: $focusColor;
   }
-  &-box {
+  &-box-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 20px 18px;
+    background-color: white;
+    width: 336px;
+    border-radius: 15px;
+    @media (min-width: 768px) {
+      width: 614px;
+    }
     @media (min-width: 1200px) {
-      display: flex;
+      width: 516px;
+    }
+  }
+  &-box-video{
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: 1200px) {
+      margin-bottom: 20px;
     }
   }
   &-video {
@@ -35,11 +58,10 @@
       height: 400px;
     }
     @media (min-width: 1200px) {
-        width: 600px;
-        height: 400px;
-        margin-right: 20px;
-      }
-    
+      width: 600px;
+      height: 400px;
+      margin-right: 20px;
+    }
   }
   &-box-title {
     font-family: var(--font-family);
@@ -48,11 +70,12 @@
     line-height: 133%;
     color: #111;
     margin-bottom: 20px;
-    @media (min-width:768px) {
-        margin-bottom: 28px;
+    @media (min-width: 768px) {
+      margin-bottom: 28px;
     }
   }
   &-list {
+    list-style-type: disc;
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
