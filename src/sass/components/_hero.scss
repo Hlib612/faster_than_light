@@ -134,28 +134,6 @@
     color: $focusColor;
     border: 1px solid $focusColor;
 }
-
-// .buttons-two{
-//     @extend %transition;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border: 1px solid #fff;
-//     border-radius: 100px;
-//     padding: 2px 30px;
-//     width: 183px;
-//     height: 45px;
-
-//     @media screen and (min-width: 768px){
-//         min-width: 183px;
-//     }
-// }
-// .buttons-two:hover {
-//     @extend %transition;
-//     background-color: $hoverColor;
-//     color: $focusColor;
-//     border: 1px solid $focusColor;
-// }
 .button-hero-chocolate-two{
     display: flex;
     justify-content: center;
